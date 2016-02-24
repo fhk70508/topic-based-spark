@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=divice-width; initial-scale=1">
+<title></title>
+<style type="text/css">
+ input[type=checkbox]{
+ display:none;
+}
+input[id=topic1] + label
+{
+background: url("/1.jpg") no-repeat;
+height: 86px;
+width: 86px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+input[id=topic1]:checked + label
+{
+background: url("/1-.jpg") no-repeat;
+height: 86px;
+width: 86px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+</style>
+</head>
+<body>
+<div id="main" >
+<form Action = 'sox_ajax.php' Method = 'POST'>
+<h3>訂閱者資料輸入</h3>
+	Name: <input type="text" name="name" /><br><br>
+	Mail: <input type="email" name="mail" /><br>
+<h3>主題選擇</h3>
+	<input type="checkbox" name="title[]" value="表演活動" id="topic1"><label>表演活動</label>
+	<input type="checkbox" name="title[]" value="展覽活動" id="topic2"><label>展覽活動</label>
+	<input type="checkbox" name="title[]" value="電影欣賞" id="topic3"><label>電影欣賞</label>
+	<input type="checkbox" name="title[]" value="其他活動" id="topic4"><label>其他活動</label>
+	<input type="checkbox" name="title[]" value="研習活動" id="topic5"><label>研習活動</label>
+	<input type="checkbox" name="title[]" value="經典講座" id="topic6"><label>經典講座</label>
+<br>
+<h3>門票選擇</h3>
+	<input type="checkbox" name="ticket[]" value="免費" id="ticket1"><label>免費</label>
+	<input type="checkbox" name="ticket[]" value="售票" id="ticket2"><label>售票</label>
+	<input type="checkbox" name="ticket[]" value="索票" id="ticket3"><label>索票</label>
+<br><br>
+<input type="submit" value="送出" >
+</form>
+</div>
+</body>
+</html>
