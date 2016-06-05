@@ -1,0 +1,13 @@
+spark-submit --master local[3] --class reupdatewc.App /home/hsueh/reupwc/target/wordcount-1.0-executable.jar localhost 1234 /home/hsueh/checkpointex
+
+Job finished: take at DStream.scala:608, took 0.041233393 s
+
+spark-submit --master local[3] --class hsueh.App /home/hsueh/IdeaProjects/streaming/target/streaming-1.0-SNAPSHOT-executable.jar localhost 1234
+
+
+
+test
+java -jar wordcount-1.0-SNAPSHOT-executable.jar wordcount-1.0-SNAPSHOT-executable.jar
+
+
+java -jar JOIN-1.0-SNAPSHOT-executable.jar JOIN-1.0-SNAPSHOT-executable.jar
